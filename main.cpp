@@ -88,12 +88,12 @@ T * Array<T>::end(){
 int main(int argc, char * args[]) {
 
 	Array<Animal *> a(2);
-
-	Cat c;
-	Dog d;
-	//cout<<c.speak()<<endl;	
+	a[0] = new Cat();
+	a[1] = new Dog();
+	a[2] = new Cat();
+	//Instead of using assertions, I provide both instances to prove it
+	cout<<a[1]->speak()<<endl;
 	cout<<a[2]->speak()<<endl;
-        cout << "Hello!" << endl;
 
 }
 
